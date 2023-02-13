@@ -1,3 +1,90 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://andriusordojan.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Andrius Ordojan'
+theme = "hugo-coder"
+
+paginate = 20
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# disqusShortname = "yourdiscussshortname"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+# [params.cloudflare]
+# token = "token"
+
+[params]
+  author = "Andrius Ordojan"
+  info = "Site Reliability Engineer"
+  description = "Andrius Ordojan | personal website"
+  keywords = "blog,developer,personal,sre"
+  # avatarurl = "images/avatar.jpg"
+  #gravatar = "john.doe@example.com"
+
+  #favicon_32 = "/img/favicon-32x32.png"
+  #favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2023
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/ordojan/"
+[[params.social]]
+  name = "Medium"
+  icon = "fa fa-medium fa-2x"
+  weight = 2
+  url = "https://andriusordojan.medium.com/"
+[[params.social]]
+  name = "Youtube"
+  icon = "fa fa-youtube fa-2x"
+  weight = 3
+  url = "https://www.youtube.com/@andriusordojan"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 4
+url = "https://www.linkedin.com/in/ordojan/"
+[[params.social]]
+name = "Email"
+icon = "fa fa-2x fa-envelope-o"
+weight = 4
+url = "mailto:andrius.or@gmail.com"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+# [[menu.main]]
+#   name = "CV"
+#   weight = 3
+#   url = "andriusordojan_cv.pdf"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
