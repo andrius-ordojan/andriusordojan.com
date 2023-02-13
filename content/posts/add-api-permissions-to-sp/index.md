@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2023-01-28
 title = "Azure - using az cli to add API permissions to a service principal"
 description = ""
@@ -59,7 +59,7 @@ We can plug in the application ID we got earlier.
 
 The `--api` flag will require the id of the target resource application in our case which is Microsoft Graph. It is listed in the command documentation, but to find it yourself head to enterprise applications inside azure ad then click All applications. You will have to change the application type filter for it to show up.
 
-![image](/assets/images/im.webp)
+![image](images/iamge.png)
 
 `--api-permissions` will contain one or more permissions. The format will be `{permissionId}=role` role means it will be an application type which is what we need based on the azuread provider documentation. Reference the Microsoft documentation for more details regarding this flag. The permission IDs can be found here. Running a search on this page for `Group.ReadWrite.All` will find the permission. Make sure to copy the id for one with application type in this case the ID is `62a82d76–70ea-41e2–9197–370581804d09`
 

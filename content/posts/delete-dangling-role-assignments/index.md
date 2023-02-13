@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2023-02-10
 title = "Azure - delete role assignments that do not have a principal"
 description = ""
@@ -15,7 +15,7 @@ series = []
 
 In Azure, when a principal gets deleted it leaves the role assignments untouched. The assignment name gets changed to “Identity not found” which makes sense. It looks like this.
 
-### add image here
+![image](images/image.webp)
 
 The issue is it easily can get messy. Readability of the “Access control” section degrades and, because of inheritance, the messiness will possibly propagate downstream. Luckily, this seems very possible to fix with scripting.
 
