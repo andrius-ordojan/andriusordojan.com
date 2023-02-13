@@ -1,6 +1,6 @@
 +++ 
 draft = true
-date = 2023-02-13T01:59:41+01:00
+date = 2023-01-28
 title = "Azure - using az cli to add API permissions to a service principal"
 description = ""
 slug = ""
