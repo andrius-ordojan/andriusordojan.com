@@ -34,7 +34,8 @@ az role assignments list --all
 By default it will scope it to the subscription, adding the flag `--all` will give us all the role assignments. Running will return JSON that looks like this.
 
 ``` json
-{
+[
+  {
     "canDelegate": null,
     "condition": null,
     "conditionVersion": null,
@@ -63,7 +64,8 @@ By default it will scope it to the subscription, adding the flag `--all` will gi
     "roleDefinitionName": "Contributor",
     "scope": "/subscriptions/1d722906-d6a0-45d5-8379-6f7138bcce5b",
     "type": "Microsoft.Authorization/roleAssignments"
-  },
+  }
+]
 ```
 
 From the response, it’s clear that the role assignments where the property called `PrincipalName` is empty are the ones that need to be deleted. Service principals use the application ID for the principal name and users will have the user principal name listed.
@@ -90,7 +92,7 @@ Setting the output to `tsv` will sanitize it so we can easily use it as an argum
 
 The final command is this. It will return all role assignments without that do not have a principal.
 
-```
+``` 
 az role assignment list --all --query [?principalName==``""``].id --output tsv  
 ```
 

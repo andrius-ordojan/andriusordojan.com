@@ -51,7 +51,7 @@ Adding API permissions [az ad app permission add](https://learn.microsoft.com/en
 
 Reading the guide for azuread linked earlier in this article it says when utilizing `azuread_group` resource the service principal needs `Group.ReadWrite.All` permissions. The command az needed would be this.
 
-``` bash
+``` powershell
 az ad app permission add --id $credentials["appId"] --api 00000003-0000-0000-c000-000000000000 --api-permissions 62a82d76-70ea-41e2-9197-370581804d09=Role #Group.ReadWrite.All
 ```
 
@@ -65,13 +65,13 @@ The `--api` flag will require the id of the target resource application in our c
 
 You can separate the permissions with spaces and add multiple ones. Here is an example.
 
-``` bash
+``` powershell
 az ad app permission add --id $credentials["appId"] --api 00000003-0000-0000-c000-000000000000 --api-permissions 62a82d76-70ea-41e2-9197-370581804d09=Role 7ab1d382-f21e-4acd-a863-ba3e13f7da61=Role
 ```
 
 After running the command it will take a minute or two for them to appear in the Azure portal. Also, you will receive a warning like this.
 
-```
+``` powershell
 Invoking `az ad app permission grant --id <appId> --api 00000003-0000-0000-c000-000000000000` is needed to make the change effective
 ```
 
