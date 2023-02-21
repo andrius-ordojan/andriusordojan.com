@@ -15,4 +15,4 @@ I wanted a website where I could share some of the explorations and discoveries 
 
 In my free time, I geek out on a wide breath of hobbies. More recently it’s photography, but not that long ago I had set up a mushroom farm at home. Physical training and combat sports is a daily practice. Also, I have a pretty cute little home server as well for some self-hosted awesomeness. Oh, and I had an obsession with learning to dance salsa for a few years. 
 
-My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <a href="mailto:me@andriusordojan.com">**me\@andriusordojan.com**</a>
+My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <a href="mailto:andrius.or@gmail.com">**andrius.or\@gmail.com**</a>
