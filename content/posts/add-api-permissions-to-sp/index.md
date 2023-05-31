@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2023-01-28
 title = "Azure - using az cli to add API permissions to a service principal"
 description = ""
