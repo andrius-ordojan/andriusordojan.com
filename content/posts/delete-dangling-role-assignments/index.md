@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2023-02-10
 title = "Azure - delete role assignments that do not have a principal"
 description = ""
