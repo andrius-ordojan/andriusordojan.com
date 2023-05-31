@@ -53,11 +53,11 @@ pygmentscodefencesguesssyntax = true
 #   icon = "fa fa-medium fa-2x"
 #   weight = 2
 #   url = "https://andriusordojan.medium.com/"
-[[params.social]]
-  name = "Youtube"
-  icon = "fa fa-youtube fa-2x"
-  weight = 3
-  url = "https://www.youtube.com/@andriusordojan"
+#[[params.social]]
+  #name = "Youtube"
+ # icon = "fa fa-youtube fa-2x"
+ # weight = 3
+#  url = "https://www.youtube.com/@andriusordojan"
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
@@ -67,7 +67,7 @@ url = "https://www.linkedin.com/in/ordojan/"
 name = "Email"
 icon = "fa fa-2x fa-envelope-o"
 weight = 5
-url = "mailto:andrius.or@gmail.com"
+url = "mailto:me@andriusordojan.com"
 
 # Menu links
 #[[menu.main]]
