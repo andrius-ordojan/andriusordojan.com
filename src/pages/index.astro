@@ -1,24 +1,50 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
-import HomePosts from "../components/HomePosts.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import { Content as About } from "./about.md";
+import PostLink from "../components/PostLink.astro";
+import { getCollection } from "astro:content";
 
-const posts = await Astro.glob("../posts/*.md");
+const posts = (await getCollection("posts")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
 <html lang="en-us">
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <BaseHead />
   <body>
-    <Header title={SITE_TITLE} />
+    <Header />
     <main>
-      <About />
+      <p>
+        This is my blog, I made this site to have a place to put random
+        writings. The resource page has a list of things I run for public use
+        and a list of alternative software to help you have more control of your
+        data and rely less on large corps. I hope it's helpful.
+      </p>
+
+      <p>
+        sometimes I get the urge to write sometihng I'm wokring on and wanted a
+        space for it. i got alot from others sharing hteir learning and knowlage
+        and wanted to do the same. maybe some today i learned style writings
+        These days I'm working as a site reliability engineer.
+      </p>
+      <p>contact me here</p>
 
       <h3>Here's my most recent posts</h3>
 
-      <HomePosts allPosts={posts} />
+      <ul class="posts-list">
+        {
+          posts.map((p) => (
+            <PostLink
+              slug={p.slug}
+              t:itle={p.data.title}
+              tags={p.data.tags}
+              description={p.data.description}
+              pubDate={p.data.pubDate}
+            />
+          ))
+        }
+      </ul>
     </main>
   </body>
 </html>

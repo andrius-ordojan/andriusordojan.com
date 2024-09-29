@@ -1,0 +1,34 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import PostLink from "../../components/PostLink.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en-us">
+  <BaseHead />
+  <body>
+    <Header />
+
+    <h3>Here's my most recent posts</h3>
+
+    <ul class="posts-list">
+      {
+        posts.map((p) => (
+          <PostLink
+            slug={p.slug}
+            title={p.data.title}
+            tags={p.data.tags}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+          />
+        ))
+      }
+    </ul>
+  </body>
+</html>
