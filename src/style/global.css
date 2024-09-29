@@ -239,6 +239,7 @@ h3 {
 .header-frame h1 {
   font-weight: bold;
   font-size: 1.8em;
+  margin-bottom: 0;
 }
 .header-frame h2 {
 }
