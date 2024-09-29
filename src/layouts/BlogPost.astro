@@ -2,34 +2,12 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Tags from "../components/Tags.astro";
-// import getTags from "../scripts/getTags";
 
 import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"posts">["data"];
 
 const { title, description, pubDate, tags } = Astro.props;
-
-// const posts = await Astro.glob("../posts/*.md");
-// const allTags = getTags(posts);
-//
-// const {
-//   content: { title, description, added, updated, tags },
-// } = Astro.props;
-//
-// added = new Date(added).toLocaleDateString("en-us", {
-//   year: "numeric",
-//   month: "short",
-//   day: "numeric",
-// });
-//
-// if (updated) {
-//   updated = new Date(updated).toLocaleDateString("en-us", {
-//     year: "numeric",
-//     month: "short",
-//     day: "numeric",
-//   });
-// }
 ---
 
 <html lang="en-us">

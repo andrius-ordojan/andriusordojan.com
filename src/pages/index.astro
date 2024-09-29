@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import PostLink from "../components/PostLink.astro";
 import { getCollection } from "astro:content";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 const posts = (await getCollection("posts")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -11,7 +12,7 @@ const posts = (await getCollection("posts")).sort(
 
 <!doctype html>
 <html lang="en-us">
-  <BaseHead />
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   <body>
     <Header />
     <main>

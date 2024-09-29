@@ -2,18 +2,13 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import getTags from "../scripts/getTags";
-
-const posts = await Astro.glob("../posts/*.md");
-
-const tags = getTags(posts);
 ---
 
 <!doctype html>
 <html lang="en-us">
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   <body>
-    <Header title={SITE_TITLE} />
+    <Header />
     <main><h1>404: Page not found</h1></main>
   </body>
 </html>
