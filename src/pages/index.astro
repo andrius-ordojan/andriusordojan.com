@@ -4,11 +4,8 @@ import Header from "../components/Header.astro";
 import HomePosts from "../components/HomePosts.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { Content as About } from "./about.md";
-import getTags from "../scripts/getTags";
 
 const posts = await Astro.glob("../posts/*.md");
-
-const tags = getTags(posts);
 ---
 
 <!doctype html>
