@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import Analytics from "../components/Analytics.astro";
 import Header from "../components/Header.astro";
 import PostLink from "../components/PostLink.astro";
 import { getCollection } from "astro:content";
@@ -47,5 +48,6 @@ const posts = (await getCollection("posts")).sort(
         }
       </ul>
     </main>
+    <Analytics />
   </body>
 </html>

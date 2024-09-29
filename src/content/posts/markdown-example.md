@@ -2,9 +2,6 @@
 title: Markdown Example
 description: >-
   Check out how markdown is rendered!
-tags:
-  - technical
-  - first
 pubDate: "May 09 2024"
 ---
 
