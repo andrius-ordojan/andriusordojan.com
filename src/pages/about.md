@@ -1,9 +1,3 @@
-Welcome to this blog template by [cassidoo](https://cassidoo.co)!
+This is my blog, I made this site to have a place to put random writings. The resource page has a list of things I run for public use and a list of alternative software to help you have more control of your data and rely less on large corps. I hope it's helpful.
 
-It's using Astro and TinaCMS. You can [clone it on GitHub](https://github.com/cassidoo/blahg) to use it for yourself, and see how it works! I would _love_ if you told me when you do use it, I love seeing variations on it!
-
-The tags at the bottom of the page are dynamically generated. The more tags you use, the more tags are added to the list! Posts are simple markdown files.
-
-You should also check out [my newsletter](https://cassidoo.co/newsletter), or my word game [Jumblie](https://jumblie.com/?utm_campaign=blahgtmp&utm_source=github), or my [GitHub profile](https://github.com/cassidoo). Or don't. Follow your dreams.
-
-Enjoy!
+contact me here
