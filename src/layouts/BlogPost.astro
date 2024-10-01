@@ -17,7 +17,15 @@ const { title, description, pubDate } = Astro.props;
     <main>
       <article>
         <h1 class="article-title">{title}</h1>
-        <span>{pubDate && <time>{pubDate}</time>}</span>
+        <time datetime={pubDate.toString()}>
+          {
+            new Date(pubDate).toLocaleDateString("en-us", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })
+          }
+        </time>
         <hr />
         <div class="blog-post">
           <slot />
