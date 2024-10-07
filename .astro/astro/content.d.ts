@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"posts": {
+"azure-delete-dangling-role-assignments.md": {
+	id: "azure-delete-dangling-role-assignments.md";
+  slug: "azure-delete-dangling-role-assignments";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "secure-linux-server-setup.md": {
 	id: "secure-linux-server-setup.md";
   slug: "secure-linux-server-setup";
