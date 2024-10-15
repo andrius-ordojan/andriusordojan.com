@@ -25,7 +25,6 @@ const posts = (await getCollection("posts")).sort(
           <PostLink
             slug={p.slug}
             title={p.data.title}
-            description={p.data.description}
             pubDate={p.data.pubDate}
           />
         ))

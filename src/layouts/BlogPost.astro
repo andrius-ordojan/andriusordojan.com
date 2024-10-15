@@ -6,11 +6,11 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"posts">["data"];
 
-const { title, description, pubDate } = Astro.props;
+const { title, pubDate } = Astro.props;
 ---
 
 <html lang="en-us">
-  <BaseHead title={title} description={description} />
+  <BaseHead title={title} description={""} />
 
   <body>
     <Header />

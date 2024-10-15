@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"exploring-diy-observability-with-vector-clickhouse-grafana.md": {
+	id: "exploring-diy-observability-with-vector-clickhouse-grafana.md";
+  slug: "exploring-diy-observability-with-vector-clickhouse-grafana";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "secure-linux-server-setup.md": {
 	id: "secure-linux-server-setup.md";
   slug: "secure-linux-server-setup";

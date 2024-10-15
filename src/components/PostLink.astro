@@ -1,5 +1,5 @@
 ---
-const { slug, title, description, pubDate } = Astro.props;
+const { slug, title, pubDate } = Astro.props;
 ---
 
 <li class="post">
@@ -14,5 +14,4 @@ const { slug, title, description, pubDate } = Astro.props;
     }
   </time>
   <br />
-  {description && <span class="excerpt">{description}</span>}
 </li>

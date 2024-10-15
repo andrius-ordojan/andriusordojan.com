@@ -20,8 +20,7 @@ const posts = (await getCollection("posts")).sort(
       <p>
         Every now and then, I feel the urge to write about what I'm working on
         or thinking about, so I created this space for it. I've learned a lot
-        from others sharing their knowledge online, and I wanted to do the
-        same.
+        from others sharing their knowledge online, and I wanted to do the same.
       </p>
 
       <br />
@@ -34,7 +33,6 @@ const posts = (await getCollection("posts")).sort(
             <PostLink
               slug={p.slug}
               title={p.data.title}
-              description={p.data.description}
               pubDate={p.data.pubDate}
             />
           ))
