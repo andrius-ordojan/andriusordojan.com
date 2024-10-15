@@ -1,7 +1,5 @@
 ---
 title: The Basics of Configuring and Securing Your New Linux Server
-description: >-
-  Learn how to secure and configure a new Linux server for hosting workloads.
 pubDate: "Oct 01 2024"
 ---
 

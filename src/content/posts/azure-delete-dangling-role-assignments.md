@@ -1,7 +1,5 @@
 ---
 title: Azure - delete dangling role assignments
-description: >-
-  Script the cleanup of orphaned Azure role assignments
 pubDate: "Oct 07 2024"
 ---
 
